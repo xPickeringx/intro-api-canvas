@@ -181,7 +181,27 @@ function roundedRect(ctx, x, y, width, height, radius) {
     ctx.arcTo(x, y, x, y + radius, radius);
     ctx.stroke();
 }
+function drawPath2D() {
+    const canvas = document.getElementById("canvas8");
+    if (canvas.getContext) {
+        const ctx = canvas.getContext("2d");
 
+        // Crear un rectángulo con Path2D
+        const rectangle = new Path2D();
+        rectangle.rect(10, 10, 50, 50);
+
+        // Crear un círculo con Path2D
+        const circle = new Path2D();
+        circle.arc(100, 35, 25, 0, 2 * Math.PI);
+
+        // Dibujar en el canvas
+        ctx.strokeStyle = "blue";
+        ctx.fillStyle = "red";
+
+        ctx.stroke(rectangle); // Contorno del rectángulo
+        ctx.fill(circle); // Relleno del círculo
+    }
+}
 // Llamar a la función cuando la página cargue
 window.onload = function () {
     drawFirstCanvas();
@@ -191,5 +211,6 @@ window.onload = function () {
     drawSpeechBubble();
     drawHeart(); // Nuevo corazón
     drawCombination();
+    drawPath2D();
 };
 
