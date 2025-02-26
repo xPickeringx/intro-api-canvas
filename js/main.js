@@ -46,7 +46,6 @@ function drawTriangle() {
         ctx.fill();
     }
 }
-
 // Llamar a todas las funciones cuando la página cargue
 window.onload = function () {
     drawFirstCanvas();
