@@ -9,7 +9,7 @@
 <body class="bg-light">
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-3">
                 <!-- Primera Card: Dibujo normal -->
                 <div class="card shadow-lg border border-dark">
                     <div class="card-header text-center bg-primary text-white">
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-3">
                 <!-- Segunda Card: Formas Rectangulares -->
                 <div class="card shadow-lg border border-dark">
                     <div class="card-header text-center bg-secondary text-white">
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-3">
                 <!-- Tercera Card: Triángulo -->
                 <div class="card shadow-lg border border-dark">
                     <div class="card-header text-center bg-success text-white">
@@ -44,11 +44,24 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-6 col-lg-3">
+                <!-- Cuarta Card: Cara Feliz -->
+                <div class="card shadow-lg border border-dark">
+                    <div class="card-header text-center bg-warning text-dark">
+                        <h5 class="m-0">Cara Feliz</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <canvas id="canvas4" width="300" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Enlace al JavaScript externo con defer -->
     <script defer src="js/main.js"></script>
 </body>
